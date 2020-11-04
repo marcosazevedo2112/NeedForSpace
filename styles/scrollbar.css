@@ -1,0 +1,16 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    color: transparent;
+  }
+
+  ::-webkit-scrollbar-track-piece{
+      background-color: black;
+       
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+  }

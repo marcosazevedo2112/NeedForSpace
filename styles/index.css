@@ -1,0 +1,31 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #f5f5f5;
+}
+
+#bg-video{
+    width: 100%;
+    position: relative;
+}
+
+#top-words{
+    position: absolute;
+    bottom: 5vh;
+    color: whitesmoke;
+    right: 5vw;
+    text-shadow: black 1px 1px;
+}
+
+#top-words > h1{
+    position: relative;
+    font-size: 5vw;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: underline;
+}
+
+#top-words > p{
+    position: relative;
+    font-size: 1.2vw;
+    font-family: 'Rubik', sans-serif;
+}

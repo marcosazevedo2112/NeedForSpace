@@ -38,7 +38,7 @@
     };
 
     function createMoon(textureMap, normalMap) {
-        var radius = 200;
+        var radius = 40;
         var xSegments = 50;
         var ySegments = 50;
         var geo = new THREE.SphereGeometry(radius, xSegments, ySegments);
@@ -106,7 +106,7 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         container.appendChild(renderer.domElement);
 
-        var fov = 50;
+        var fov = 10;
         var aspect = window.innerWidth / window.innerHeight;
         var near = 1;
         var far = 10000;

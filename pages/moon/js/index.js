@@ -25,7 +25,7 @@
     var moon;
     var starfield;
     var light = {
-        speed: 0.5,
+        speed: 0.1,
         distance: 500,
         position: new THREE.Vector3(0, 0, 0),
         orbit: function (center, time) {

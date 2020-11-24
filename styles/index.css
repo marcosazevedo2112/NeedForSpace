@@ -3,6 +3,7 @@ html{
 }
 
 body{
+    max-width: 100vw;
     padding: 0%;
     margin: 0%;
     background-attachment: fixed;
@@ -10,7 +11,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url("../sources/imgs/563119.jpg");
+    background-image: url("../sources/imgs/body.jpg");
 }
 #container-topo{
     max-width: 100vw;
@@ -20,7 +21,7 @@ body{
 .video > video{
     width: 100%;
     height: 100%;
-    object-fit:  cover;
+    object-fit: cover;
 }
 
 #container-topo .texto{
@@ -60,6 +61,7 @@ body{
     
 }
 #container-meio #quadrado-texto{
+    z-index: 1;
     background-color: #f5f5f5;
     padding: 6vh;
     border-radius: 5vh;
@@ -107,10 +109,12 @@ body{
     margin: 15vh;
     text-decoration: none;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 60%;
 }
 
 .chamada:hover{
     border-radius: 0px 100px 0px 100px;
+    opacity: 100%;
 }
 
 .chamada > p > .chamada-img{
@@ -135,15 +139,7 @@ body{
     color: white;
     
 }
-
-#apolo{
-    font-family: "Poppins", sans-serif;
-    font-size: 64px;
-    text-align: center;
-    color: white;
-}
 #homem-lua{
-    height: 100vh;
     width: 100%;
 }
 
@@ -152,6 +148,64 @@ body{
     width: 100%;
 }
 
+#apolo{
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+#apolo h1{
+    margin-bottom: 0px;
+}
+#apolo p{
+    font-size: 32px;
+    margin-top: 0px;
+}
+#video iframe{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.apolo-info{
+    margin: 4vh 30vh 4vh 30vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vh;
+}
+
+#lua-info{
+    margin: 15vh 5vh 0px;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+}
+
+@media screen and (max-width: 600px){
+    #container-topo .texto{
+        padding-left: 10vw;
+        position: absolute;
+        padding: 0px;
+    }
+    #container-topo .texto h1{
+        font-size: 15vh;
+    }
+    #container-topo .texto p{
+        display: none;
+    }
+
+    #container-meio{
+        display: none;
+    }
+    .chamada{
+        opacity: 100%;
+        border-radius: 0px 100px 0px 100px;
+        font-size: 3vh;
+        padding: 7vh;
+    }
+    .chamada:hover{
+        border-radius: 0px 100px 0px 100px;
+    }
+}
 @media screen and (max-width: 1400px){
     #container-meio #quadrado-texto > p{
         font-size: 0.8em;

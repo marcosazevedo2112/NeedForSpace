@@ -1,4 +1,5 @@
 .bar{
+    z-index: 99;
     margin: 0%;
     width: 100%;
     text-align: right;

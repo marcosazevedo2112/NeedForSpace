@@ -1,0 +1,16 @@
+#compra-area{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+#input-venda{
+    margin-top: -3px;
+    margin-left: 200px;
+    font-size: 24px;
+}
+
+#buy{
+    margin-top: 50px;
+    display: block;
+}

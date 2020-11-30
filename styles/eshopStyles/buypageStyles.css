@@ -10,6 +10,12 @@
     font-size: 24px;
 }
 
+#input-venda input{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
 #buy{
     margin-top: 50px;
     display: block;

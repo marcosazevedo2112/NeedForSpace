@@ -51,6 +51,10 @@
     }
 }
 
+#dark .menu ul{
+    background: linear-gradient(rgba(2,0,36,0.36) 0%, rgba(255,255,255,0) 91%);
+}
+
 #dark .menu ul li a{
     color: #202239;
 }

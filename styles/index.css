@@ -120,8 +120,11 @@ body{
     width: 100%;
     background-attachment: fixed;
     background-color: #f1f1f1;
-    background-image: url("../sources/imgs/563119.jpg");
+    background-image: url("../sources/imgs/bodyimg.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    transition: background-position 0.1s linear;
 }
 
 .chamada{
@@ -166,6 +169,11 @@ body{
 }
 #homem-lua{
     width: 100%;
+    background-image: url("../sources/imgs/563119.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 #apolo{
@@ -176,6 +184,7 @@ body{
 }
 
 #apolo h1{
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -216,18 +225,6 @@ body{
 #lua iframe{
     height: 100vh;
     width: 100%;
-}
-
-#voyager{
-    padding:10px;
-    position:fixed;
-    top: 90%;
-    right:40px;
-    display:none;
-    font-size: 30px;
-}
-#voyager:hover{
-    text-decoration:none;
 }
 
 @media screen and (max-width: 600px){

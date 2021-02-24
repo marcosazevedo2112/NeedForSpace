@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 <body>
-    <div id="modal">
-    </div>
     <section id="loading">
         <div id="meio">
             <img src="sources/imgs/loading.gif" alt="Imagem de loading">
@@ -34,7 +32,7 @@
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="#">Comprar</a>
+                        <a href="#">Produtos</a>
                     </li>
                     <li>
                         <a href="#linha-tempo" id="URSS">Trajetória Rumo a Lua</a>
@@ -140,18 +138,18 @@
             </div>
             <div class="chamada URSS">
                 <p>
-                    <img class="chamada-img" src="https://cdn.discordapp.com/attachments/770006003416563736/779066374537871430/luna_10.png" alt="Foto da ">
+                    <img class="chamada-img" src="https://cdn.discordapp.com/attachments/770006003416563736/779066374537871430/luna_10.png" alt="Foto da missão não tripulada Luna 10">
                     <strong>Luna 10</strong>: Foi a designação de uma missão não tripulada conduzida pela União Soviética, composta por uma Espaçonave robótica que se tornou o primeiro satélite artificial da Lua.</p>
             </div>
             <div class="chamada EUA">
                 <p>
-                    <img class="chamada-img" src="https://cdn.discordapp.com/attachments/770006003416563736/779066342552109106/apolo_1.png" alt="">
+                    <img class="chamada-img" src="https://cdn.discordapp.com/attachments/770006003416563736/779066342552109106/apolo_1.png" alt="Foto dos membros da missão Apolo 1">
                     <strong>Apolo 1</strong>: foi a primeira missão tripulada do Programa Apollo dos Estados Unidos, que teve como objetivo final um pouso lunar tripulado. Um incêndio na cabine durante um ensaio de lançamento no dia
                     27 de janeiro de 1967 no Complexo de Lançamento da Estação da Força Aérea do Cabo Kennedy matou todos os três membros da tripulação.</p>
             </div>
             <div class="chamada URSS">
                 <p>
-                    <img class="chamada-img" src="https://cdn.discordapp.com/attachments/770006003416563736/779066822636077096/vladimir.png" alt="">
+                    <img class="chamada-img" src="https://cdn.discordapp.com/attachments/770006003416563736/779066822636077096/vladimir.png" alt="Foto do cosmonauta Vladimir Komarov">
                     <strong>Soyuz 1</strong>: Inicialmente programada para realizar um encontro em órbita com a Soyuz 2, com troca das tripulações no espaço, a missão terminou em tragédia. O cosmonauta Vladimir Komarov, tripulante da nave, 
                     morreu durante a reentrada da nave na atmosfera. Esta foi a primeira fatalidade confirmada na história da exploração espacial.</p>
             </div>
@@ -188,5 +186,31 @@
     </div>
     <script src="js/loading.js"></script>
     <script src="js/background.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCHeNEy-Dv8_9pFyutzSRTnWFqloGuxZdA",
+        authDomain: "needforspace-fdcb9.firebaseapp.com",
+        projectId: "needforspace-fdcb9",
+        storageBucket: "needforspace-fdcb9.appspot.com",
+        messagingSenderId: "668965770062",
+        appId: "1:668965770062:web:1fb7b885dbe3696a5fc41f",
+        measurementId: "G-XFY4M0HR67"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <script src="js/firebase.js"></script>
 </body>
 </html>

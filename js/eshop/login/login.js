@@ -19,7 +19,7 @@ logar.addEventListener("click", (evt) => {
     return;
   }
   
-  logUserWithWebStorage(usuerValue, passwordValue);
+  logUserWithWebStorage(userValue, passwordValue);
 });
 
 function logUserWithWebStorage(usuario, senha) {

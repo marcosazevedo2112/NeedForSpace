@@ -1,6 +1,6 @@
 <html lang="pt-br">
 <head>
-    <meta ch   arset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Need For Space</title>
     <link rel="shortcut icon" href="sources/imgs/icon.ico" type="image/x-icon">
@@ -16,7 +16,7 @@
             <p>Por favor aguarde, estamos carregando</p>
         </div>
     </section>
-    <div id="conteudo"> 
+    <div id="conteudo"> >
         <section id="container-topo">
             <div class="video">
                 <video src="sources/videos/VideoLua.mp4" muted autoplay loop="">Seu navegador não surporta a Tag de video<br>
@@ -32,7 +32,7 @@
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="#">Produtos</a>
+                        <a href="pages/eshop/criarconta.html">Produtos</a>
                     </li>
                     <li>
                         <a href="#linha-tempo" id="URSS">Trajetória Rumo a Lua</a>
@@ -42,6 +42,9 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div id="modal-btn" class="sumiu">
+            <img src="https://cdn.discordapp.com/attachments/785550181322981426/814471415439949924/cb6cd603ea1a81ae1a095365f912e71e.png" alt="">
         </div>
         <section id="container-meio">
             <div id="quadrado-texto">
@@ -183,24 +186,34 @@
                 <iframe src="pages/moon/lua.html" frameborder="0"></iframe>
             </div>
         </section>
-        <div id="modal">
-            <img id="botao-modal" src="https://cdn.discordapp.com/attachments/770006003416563736/814246166425894932/18436.png" alt="">
-            <div id="quem-somos" id="sumiu">
-                <img  class="img-somos" src="https://cdn.discordapp.com/attachments/770006003416563736/781724964037984276/1606448125414.jpg"  alt="Luiz Fernando">
-                <p>Luiz Fernando Almeida</p>
-                <img  class="img-somos" src="https://cdn.discordapp.com/attachments/770006003416563736/781916236048629790/image0.png" alt="Gustavo">
-                <p>Gustavo Alvarenga</p>
-                <img class="img-somos" src="https://cdn.discordapp.com/attachments/770006003416563736/814233811662536704/20201024_080458.jpg" alt="Yuri">
-                <p>Yuri Estevão</p>
-                <img  class="img-somos" src="https://cdn.discordapp.com/attachments/770006003416563736/781725692676145162/Screenshot_2020-11-27-00-37-29-731_com.instagram.android.jpg" alt="Marcos">
-                <p>Marcos Paulo</p>
-                <img class="img-somos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/280px-FullMoon2010.jpg" alt="Autor da Lua">
-                <p>Cory Gross (fez a lua)</p>
-            </div>
         </div>
+
+        <div id="center-modal">
+            <div class="sumiu" id="modal">
+                <h3>Quem somos?</h3>
+                   <div id="modal-grid">
+                    <div>
+                        <img class="img-modal" src="https://cdn.discordapp.com/attachments/770006003416563736/781936295546322994/marcos.png" alt="">
+                        <p>Marcos Paulo</p>
+                    </div>
+                   <div>
+                    <img class="img-modal" src="https://cdn.discordapp.com/attachments/770006003416563736/781916655269314560/IMG_4384.jpg" alt="">
+                    <p>Gustavo Alvarenga</p>
+                   </div>
+                    <div>
+                        <img class="img-modal" src="https://cdn.discordapp.com/attachments/770006003416563736/781724964037984276/1606448125414.jpg" alt="">
+                    <p>Luiz Fernando</p>
+                    </div>
+                    <div>
+                        <img class="img-modal" src="https://cdn.discordapp.com/attachments/770006003416563736/814233811662536704/20201024_080458.jpg" alt="">
+                    <p>Yuri Estevão</p>
+                    </div>
+                   </div>
+            </div>
         </div>
         <script src="js/loading.js"></script>
         <script src="js/background.js"></script>
+        <script src="js/modal.js"></script>
         
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
@@ -226,7 +239,9 @@
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
         </script>
-        <script src="firebase/connections.js"></script>
-        <script src="firebase/models.js/Usuario.js"></script>
+        <script src="js/firebase/models/Usuario.js"></script>
+        <script src="js/firebase/utils.js"></script>
+        <script src="js/firebase/dbFunc.js"></script>
+        <script src="js/eshop/login.js"></script>
         </body>
 </html>

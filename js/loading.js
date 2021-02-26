@@ -12,7 +12,7 @@ function terminaLoading() {
     document.getElementById("conteudo").style.visibility = "visible";
     if(oneTime==0){
         window.scrollTo(0,0);
-        oneTime==1
+        oneTime=1;
     }
     
 }

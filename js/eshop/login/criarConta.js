@@ -32,6 +32,7 @@ criar.addEventListener("click", (evt) => {
           'Atenção! Usuario ja cadastrado, deseja  <a href="../../../pages/eshop/login.html">Logar</a>?';
       }
       localStorage.setItem("usuarioLogado", userValue);
+      window.location.href = "login.html";
     })
     .catch((e) => {
       console.log("deu ruim: " + e);

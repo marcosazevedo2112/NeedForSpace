@@ -1,3 +1,5 @@
+
+
 function getAllProducts() {
   getProductsDB()
     .then((products) => {

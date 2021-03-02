@@ -27,6 +27,8 @@ function logUserWithWebStorage(usuario, senha) {
     .then((user) => {
      if (typeof(user) !== typeof(1)){
        localStorage.setItem('usuarioLogado', user.id);
+       window.location.href = "/pages/eshop/loja.html";
+       console.log("pagina");
      }else{
        if (user === -10){
         errorEl.style.color = "red";

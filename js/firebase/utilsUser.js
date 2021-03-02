@@ -9,18 +9,24 @@ function searchUserDB(id, senha) {
       let data;
       queryResult.forEach((element) => {
         data = element.data();
-        if (data != null) {
-          if (cript(senha, 7) === data.psswd) {
-          } else {
-            return -1;
-          }
-        }
       });
-      return data;
+      if (typeof data !== typeof undefined) {
+        //usuario existe
+        if (data.psswd === cript(senha, 7)) {
+          //senha está certa
+          return data;
+        } else {
+          return -10;
+          //senha está errada
+        }
+      } else {
+        return -99;
+        //usuario não existe
+      }
     })
     .catch((err) => {
-      console.log("Erro ao acessar o banco de dados " + err);
-      return -2;
+      console.log(err);
+      return -1;
     });
 }
 
@@ -31,7 +37,6 @@ function addUser(model) {
     id: model.id,
     psswd: newPsswd,
   };
-  console.log(newModel);
   return users
     .doc(newModel.id)
     .get()
@@ -41,7 +46,7 @@ function addUser(model) {
       if (!result) {
         users.doc(newModel.id).set(newModel);
         console.log("conta criada!");
-        return 0
+        return 0;
       } else {
         console.log("email ja usado!");
         return 1;

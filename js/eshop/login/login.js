@@ -25,7 +25,25 @@ logar.addEventListener("click", (evt) => {
 function logUserWithWebStorage(usuario, senha) {
   searchUserDB(usuario, senha)
     .then((user) => {
-      localStorage.setItem("usuarioLogado", usuario);
+     if (typeof(user) !== typeof(1)){
+       localStorage.setItem('usuarioLogado', user.id);
+     }else{
+       if (user === -10){
+        errorEl.style.color = "red";
+        errorEl.innerHTML = "Senha errada! Esqueceu sua senha?";
+        return;
+       }
+       else if( user === -99){
+        errorEl.style.color = "red";
+        errorEl.innerHTML = "Este usuario não existe, verifique os campos acima.";
+        return;
+       }
+       else{
+        errorEl.style.color = "red";
+        errorEl.innerHTML = "Erro desconhecido, tente novamente mais tarde. (provavel queda do banco de dados)";
+        return;
+       }
+     }
     })
     .catch((error) => {
       console.log("erro desconhecido" + error);

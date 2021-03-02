@@ -6,6 +6,7 @@ body{
     width: 100vw;
     background-image: url("../../sources/imgs/login.jpg");
     background-size: 120%;
+    background-repeat: no-repeat;
 
 }
 #cardId{

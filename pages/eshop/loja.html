@@ -1,58 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Need for Money - Compre aqui</title>
-    <link rel="stylesheet" href="../../styles/bar.css">
-    <link rel="stylesheet" href="../../styles/eshop/loja.css">
-  </head>
-  <body>
-    <div id="conteudo">
-      <div class="bar">
-        <nav class="menu">
-          <ul>
-            <li>
-              <a href="pages/eshop/criarconta.html">Comprar</a>
-            </li>
-            <li>
-              <a href="#linha-tempo" id="URSS">Vender</a>
-            </li>
-            <li>
-              <a href="#container-topo" id="name">Need For Space</a>
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Need for Money - Compre aqui</title>
+  <title>Entrada de um foguete</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../styles/bar.css">
+  <link rel="stylesheet" href="../../styles/fonts.css">
+  <link rel="stylesheet" href="../../styles/eshop/loja.css">
+  <link rel="stylesheet" href="../../styles/scrollbar.css">
+  <link rel="shortcut icon" href="../../sources/imgs/icon.ico" type="image/x-icon">
+  <title>Entrada de um foguete</title>
+</head>
+
+<body>
+  <div id="conteudo">
+    <div id="container-top">
+      <div id="texto">
+        <h1>Need for Money</h1>
+        <p>Depois de anos de aventuras e descobertas incríveis, a equipe do Need for Space juntou
+          os principais itens de toda a galáxia, e agora queremos disponiblizar alguns deles para todos
+          os seres humanos. Aqui você encontrará os produtos mais cobiçados do universo!
+        </p>
       </div>
     </div>
-    <script src="../../js/eshop/checklogin.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyCHeNEy-Dv8_9pFyutzSRTnWFqloGuxZdA",
-        authDomain: "needforspace-fdcb9.firebaseapp.com",
-        projectId: "needforspace-fdcb9",
-        storageBucket: "needforspace-fdcb9.appspot.com",
-        messagingSenderId: "668965770062",
-        appId: "1:668965770062:web:1fb7b885dbe3696a5fc41f",
-        measurementId: "G-XFY4M0HR67",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
-    <script src="../../js/firebase/models/Produto.js"></script>
-    <script src="../../js/firebase/utilsLoja.js"></script>
-    <script src="../../js/eshop/loja.js"></script>
-  </body>
+    <div class="bar" id="dark">
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#loja">Comprar</a>
+          </li>
+          <li>
+            <a href="vender.html" id="URSS">Vender</a>
+          </li>
+          <li>
+            <a href="../../index.html" id="name">Need For Space</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="bagulho-branco">
+      <div id="interno">
+        <h2 id="usuario">Bem vindo(a), @usuario!</h2>
+        <ul>
+          <li>
+            <div class="saiba-mais">
+              <img src="https://image.flaticon.com/icons/png/512/856/856055.png" alt="">
+              <h3>Venda Conosco</h3>
+              <p>Cadastre seu produto de uma maneira muito fácil e rápida.</p>
+            </div>
+          </li>
+          <li>
+            <div class="saiba-mais">
+              <img src="https://image.flaticon.com/icons/png/512/1992/1992504.png" alt="">
+              <h3>Compre seus produtos favoritos</h3>
+              <p>Aproveite a biblioteca de produtos mais recheada do universo</p>
+            </div>
+          </li>
+          <li>
+            <div class="saiba-mais">
+              <img src="https://image.flaticon.com/icons/png/512/1926/1926537.png" alt="">
+              <h3>Receba de forma segura</h3>
+              <p>É tão fácil que você nem precisa cadastrar seu endereço, pois nós já sabemos</p>
+            </div>
+          </li>
+    
+      </div>
+    </div>
+    <div id="enfeite">
+    </div>
+    <div id="loja">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://cdn.discordapp.com/attachments/770006003416563736/816811813076860999/favpng_chewbacca-star-wars-battlefront-ii-anakin-skywalker-luke-skywalker-han-solo.png"
+          alt="">
+        <div class="card-body">
+          <h4>Papo com o Dr. Chewbacca</h4>
+          <p class="card-subtitle mb-2 text-muted">By <span id="usuario">Need For Space™ and Disney</span></p>
+          <p class="card-text"><span>US$ 200.000,00</span></p>
+          <a href="#" class="link">Foguetinho</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea196117-0b64-49b7-b13f-79f43cf77e53/ddls31c-9247bae6-b63b-4209-b3d3-df61ddb1bf67.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZWExOTYxMTctMGI2NC00OWI3LWIxM2YtNzlmNDNjZjc3ZTUzXC9kZGxzMzFjLTkyNDdiYWU2LWI2M2ItNDIwOS1iM2QzLWRmNjFkZGIxYmY2Ny5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-9XEYkI6DKEU_EW6wnuY8RIRBaLZjG34bzHihg8ah4I"
+          alt="">
+        <div class="card-body">
+          <h4>Baby Yoda</h4>
+          <p class="card-subtitle mb-2 text-muted">By <span id="usuario">Need For Space™</span></p>
+          <p class="card-text"><span>US$ 100.000,00</span></p>
+          <a href="#" class="link">Foguetinho</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://cdn.discordapp.com/attachments/770006003416563736/816808599346217000/kryptonite-mineral-JeKkPl0-600-removebg-preview.png"
+          alt="">
+        <div class="card-body">
+          <h4>Kryptonita</h4>
+          <p class="card-subtitle mb-2 text-muted">By <span id="usuario">Need For Space™</span></p>
+          <p class="card-text"><span>US$ 4.000,00/g</span></p>
+          <a href="#" class="link">Foguetinho</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://i.pinimg.com/originals/b4/5a/b4/b45ab43fa147c614d04c663a2c84e0d3.png"
+          alt="">
+        <div class="card-body">
+          <h4>Armadura Mandaloriana</h4>
+          <p class="card-subtitle mb-2 text-muted">By <span id="usuario">Need For Space™</span></p>
+          <p class="card-text"><span>US$ 20.000,00</span></p>
+          <a href="#" class="link">Foguetinho</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea196117-0b64-49b7-b13f-79f43cf77e53/dbradtr-2d49a0d9-9984-4fb5-b9b4-1ee547d46241.png/v1/fill/w_600,h_861,strp/baby_groot_3___png_by_captain_kingsman16_dbradtr-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04NjEiLCJwYXRoIjoiXC9mXC9lYTE5NjExNy0wYjY0LTQ5YjctYjEzZi03OWY0M2NmNzdlNTNcL2RicmFkdHItMmQ0OWEwZDktOTk4NC00ZmI1LWI5YjQtMWVlNTQ3ZDQ2MjQxLnBuZyIsIndpZHRoIjoiPD02MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.gCynr4-d471SJs9MFcmNoQ5zOCKVNeCwvundhZ08rg8"
+          alt="">
+        <div class="card-body">
+          <h4>Baby Groot</h4>
+          <p class="card-subtitle mb-2 text-muted">By <span id="usuario">Need For Space™</span></p>
+          <p class="card-text"><span>US$ 40.000,00</span></p>
+          <a class="link">Foguetinho</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://i.pinimg.com/originals/b4/5a/b4/b45ab43fa147c614d04c663a2c84e0d3.png"
+          alt="">
+        <div class="card-body">
+          <h4>Armadura Mandaloriana</h4>
+          <p class="card-subtitle mb-2 text-muted">By <span id="usuario">Need For Space™</span></p>
+          <p class="card-text"><span>US$ 20.000,00</span></p>
+          <a href="#" class="link">Foguetinho</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/eshop/checklogin.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCHeNEy-Dv8_9pFyutzSRTnWFqloGuxZdA",
+      authDomain: "needforspace-fdcb9.firebaseapp.com",
+      projectId: "needforspace-fdcb9",
+      storageBucket: "needforspace-fdcb9.appspot.com",
+      messagingSenderId: "668965770062",
+      appId: "1:668965770062:web:1fb7b885dbe3696a5fc41f",
+      measurementId: "G-XFY4M0HR67",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="../../js/firebase/utilsUser.js"></script>
+<script src="../../js/eshop/loja.js"></script>
+</body>
 </html>

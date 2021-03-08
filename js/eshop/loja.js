@@ -1,15 +1,5 @@
-
-
-function getAllProducts() {
-  getProductsDB()
-    .then((products) => {
-        
-    })
-    .catch((error) => {
-        return error;
-    })
-}
-
-function categorySort(){
-  
-}
+(function(){
+    let usuario = localStorage.getItem("usuarioLogado");
+    let usuarioEl = document.querySelector("#usuario");
+    usuarioEl.innerHTML = `Bem vindo(a), @${usuario}`;
+})();

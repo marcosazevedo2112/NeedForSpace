@@ -1,4 +1,5 @@
 let bgLDT = document.querySelector("#linha-tempo");
+
 if(bgLDT == null){
     bgLDT = document.querySelector("#container");
 }

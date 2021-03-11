@@ -38,7 +38,7 @@ function clickBtnAddUser(evt) {
       if (res === 1) {
         errorEl.style.color = "red";
         errorEl.innerHTML =
-          'Atenção! Usuario ja cadastrado, deseja  <a href="../../../pages/eshop/login.html">Logar</a>?';
+          'Atenção! Usuario ja cadastrado, deseja  <a href="login.html">Logar</a>?';
           return 0;
       }
       localStorage.setItem("usuarioLogado", userValue);

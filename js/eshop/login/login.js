@@ -4,7 +4,8 @@ let password = document.querySelector("#InputPassword1");
 let errorEl = document.querySelector("#help");
 let logar = document.querySelector("#logar-btn");
 
-criar.addEventListener("click", () => {
+criar.addEventListener("click", evt => {
+  evt.preventDefault();
   location.href = "criarconta.html";
 });
 logar.addEventListener("click", (evt) => {

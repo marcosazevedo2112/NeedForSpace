@@ -5,24 +5,33 @@ let password = document.querySelector("#InputPassword1");
 let errorEl = document.querySelector("#help");
 let logar = document.querySelector("#logar-btn");
 
-logar.addEventListener("click", ()=>{
-    location.href = "login.html";
-})
+logar.addEventListener("click", () => {
+  location.href = "login.html";
+});
 
-criar.addEventListener("click", (evt) => {
+criar.addEventListener("click", clickBtnAddUser);
+
+function clickBtnAddUser(evt) {
   evt.preventDefault();
   let emailValue = email.value;
   let userValue = user.value;
   let passwordValue = password.value;
 
-  userValue = userValue.trim();
-  if(userValue === ""){
+  if (userValue.length < 3 || passwordValue.length < 3) {
     errorEl.style.color = "red";
     errorEl.innerHTML =
-      'Atenção! Preencha os campos de forma adequada.';
-      return 
+      "O nome de usuario e senha deve conter no minimo 3 caracteres. ";
+    return -76;
   }
-
+  if (
+    emailValue == "" ||
+    emailValue.indexOf("@") == -1 ||
+    emailValue.indexOf(".") == -1
+  ) {
+    errorEl.style.color = "red";
+    errorEl.innerHTML = "Coloque o email corretamente. ";
+    return -77;
+  }
   let userp = new createNewUser(userValue, emailValue, passwordValue);
   addUser(userp)
     .then((res) => {
@@ -30,6 +39,7 @@ criar.addEventListener("click", (evt) => {
         errorEl.style.color = "red";
         errorEl.innerHTML =
           'Atenção! Usuario ja cadastrado, deseja  <a href="../../../pages/eshop/login.html">Logar</a>?';
+          return 0;
       }
       localStorage.setItem("usuarioLogado", userValue);
       window.location.href = "login.html";
@@ -37,4 +47,4 @@ criar.addEventListener("click", (evt) => {
     .catch((e) => {
       console.log("deu ruim: " + e);
     });
-});
+}

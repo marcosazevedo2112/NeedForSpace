@@ -87,7 +87,7 @@ body {
 #loja .card{
   display: flexbox;
   margin: 50px;
-  width: 50vh;
+  width: 18rem;
   border-radius: 15px;
   transition: 200ms ease-in-out;
 }
@@ -110,6 +110,7 @@ body {
   height: 300px;
   width: auto;
   max-width: 100%;
+  
 }
 
 #loja .card .link{
@@ -119,4 +120,24 @@ body {
   color: white;
   font-family: 'poppins';
   font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+#loja .card .link:hover{
+  transition: 200ms ease-in-out;
+  transform: scale(1.1,1.1);
+}
+
+#loja div#mais{
+  margin: auto 0;
+  height: 300px;
+  cursor: pointer;
+}
+
+#loja div#mais .card-img-top{
+  height: 200px;
+}
+
+#loja div#mais .card-body{
+  text-align: center;
 }

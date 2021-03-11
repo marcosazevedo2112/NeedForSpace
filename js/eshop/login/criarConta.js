@@ -39,10 +39,15 @@ function clickBtnAddUser(evt) {
         errorEl.style.color = "red";
         errorEl.innerHTML =
           'Atenção! Usuario ja cadastrado, deseja  <a href="login.html">Logar</a>?';
-          return 0;
+        return 0;
       }
+      errorEl.style.color = "green";
+      errorEl.innerHTML =
+        "Conta Criada! Você será redirecionado em alguns segundos";
       localStorage.setItem("usuarioLogado", userValue);
-      window.location.href = "login.html";
+      setTimeout(() => {
+        window.location.href = "login.html";
+      }, 1500);
     })
     .catch((e) => {
       console.log("deu ruim: " + e);

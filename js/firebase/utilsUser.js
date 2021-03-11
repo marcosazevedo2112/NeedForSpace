@@ -44,6 +44,7 @@ function addUser(model) {
       let result = null;
       result = doc.data();
       if (!result) {
+        console.log(newModel);
         users.doc(newModel.id).set(newModel);
         console.log("conta criada!");
         return 0;

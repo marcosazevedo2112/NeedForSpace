@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    background-color: white;
+  }
+  
+  #container-top {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://cdn.discordapp.com/attachments/785200357328027658/820771354042695760/c904f5b1-7b84-42ec-9072-73ab370d868e.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 99;
+  }
+  
+  #container-top > #texto {
+    position: absolute;
+    color: white;
+    width: 40vw;
+    font-family: "Rubik", sans-serif;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  #texto h1 {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 5em;
+    margin-bottom: 3vh;
+  }
+  #texto p {
+    margin-top: 0px;
+    margin-top: 0px;
+    margin-top: 0px;
+  }
+  

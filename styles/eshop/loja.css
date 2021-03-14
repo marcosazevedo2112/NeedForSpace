@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -13,6 +13,7 @@ body {
   background-image: url("../../sources/imgs/fundo.jpg");
   background-size: cover;
   background-attachment: fixed;
+  z-index: 99;
 }
 
 #container-top > #texto {
@@ -24,15 +25,15 @@ body {
   right: 10px;
 }
 
-#texto h1{
-    text-decoration: underline;
-    font-weight: 500;
-    font-size: 5em;
-    margin-bottom: 3vh;
+#texto h1 {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 5em;
+  margin-bottom: 3vh;
 }
-#texto p{
-    margin-top: 0px;
-    margin-top: 0px;
+#texto p {
+  margin-top: 0px;
+  margin-top: 0px;
   margin-top: 0px;
 }
 
@@ -42,102 +43,133 @@ body {
   width: 99vw;
 }
 
-      
 #bagulho-branco > #interno {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
-#bagulho-branco > #interno ul{
-    list-style-type: none;
-    display: inline;
+#bagulho-branco > #interno ul {
+  list-style-type: none;
+  display: inline;
 }
 
-#bagulho-branco > #interno ul li{
-    display: inline-block;
-    text-align: center;
+#bagulho-branco > #interno ul li {
+  display: inline-block;
+  text-align: center;
 }
 
-#bagulho-branco > #interno .saiba-mais{
-    width: 25vw;
-    height: 20vw;
-    padding: 5px;
+#bagulho-branco > #interno .saiba-mais {
+  width: 25vw;
+  height: 20vw;
+  padding: 5px;
 }
 
-#bagulho-branco > #interno .saiba-mais img{
-    height: 90px;
+#bagulho-branco > #interno .saiba-mais img {
+  height: 90px;
 }
 
-#enfeite{
-    background-image: url("../../sources/imgs/enfeite.png");
-    height: 55vh;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'poppins';
+#enfeite {
+  background-image: url("../../sources/imgs/enfeite.png");
+  height: 55vh;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "poppins";
 }
-#loja{
+#loja {
   background-color: white;
   width: 99vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: -2;
 }
-#loja .card{
+#loja .card {
   display: flexbox;
   margin: 50px;
   width: 18rem;
   border-radius: 15px;
   transition: 200ms ease-in-out;
+  z-index: 0;
 }
 
-#loja .card:hover{
-  -webkit-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.15);
-  box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.15);
-  transform: scale(1.1,1.1);
+#loja .card:hover {
+  -webkit-box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1, 1.1);
 }
 
-#loja .card .card-body{
+#loja .card .card-body {
   text-align: left;
 }
+#loja .card .card-body .categoria {
+  font-size: 0.9em;
+}
 
-#loja .card .card-img-top{
+#loja .card .card-img-top {
   padding: 50px;
   margin: auto;
   display: inline;
   height: 300px;
   width: auto;
   max-width: 100%;
-  
 }
 
-#loja .card .link{
+#loja .card .link {
   padding: 5px 15px;
   background-color: orange;
   border-radius: 22px;
   color: white;
-  font-family: 'poppins';
+  font-family: "poppins";
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
-#loja .card .link:hover{
+#loja .card .link:hover {
   transition: 200ms ease-in-out;
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
 
-#loja div#mais{
+#loja div#mais {
   margin: auto 0;
   height: 300px;
   cursor: pointer;
 }
 
-#loja div#mais .card-img-top{
+#loja div#mais .card-img-top {
   height: 200px;
 }
 
-#loja div#mais .card-body{
+#loja div#mais .card-body {
   text-align: center;
+}
+#foguete > img {
+  height: 120px;
+}
+
+#foguete {
+  border-radius: 100%;
+  bottom: 50px;
+  z-index: 90;
+  margin: 0%;
+  position: fixed;
+  right: 30px;
+  cursor: pointer;
+  background-color: white;
+}
+
+#foguete p {
+  position: absolute;
+}
+
+#foguete:hover {
+  -webkit-box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, 0.15);
+}
+
+.sumiu {
+  display: none;
 }

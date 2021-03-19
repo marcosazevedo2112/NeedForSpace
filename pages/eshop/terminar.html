@@ -1,0 +1,115 @@
+<!DCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../styles/bar.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/eshop/terminar.css" />
+    <link rel="stylesheet" href="../../styles/scrollbar.css" />
+    <link
+      rel="shortcut icon"
+      href="../../sources/imgs/icon.ico"
+      type="image/x-icon"
+    />
+    <title>Finalize sua compra</title>
+  </head>
+
+  <body>
+    <div id="conteudo">
+      <div id="container-top">
+        <div id="texto">
+          <h1>Finalize sua compra</h1>
+        </div>
+      </div>
+      <div class="bar" id="dark">
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="loja.html">Comprar</a>
+            </li>
+            <li>
+              <a href="vender.html" id="URSS">Vender</a>
+            </li>
+            <li>
+              <a href="../../index.html" id="name">Need For Space</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container" id="container-compras">
+      <div class="card">
+        
+      </div>
+      <div id="form-pai">
+        <div class="form-group">
+          <form action="localiza.html">
+            <div class="form-group">
+              <label for="cartao-numero">Número do cartão: </label>
+              <input class="form-control" id='cartao-numero' placeholder="0000 0000 0000 0000" type="tel" required maxlength="16" minlength="16">
+            </div>
+            <div class="form-group">
+              <label for="nome">Nome do titular: </label>
+              <input class="form-control" id='nome' type='text' minlength="10" required placeholder="João da silva">
+            </div>
+            <div class="form-group">
+              <label for="data">Data de validade: </label>
+              <input class="form-control" id='data' type='month' required>
+            </div>
+            <div class="form-group">
+              <label for="codigo">CVV: </labe>
+              <button type="button" id="modal-btn-cvv" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalCvv">
+                ?
+              </button>
+              <input class="form-control" id='codigo' type='tel' placeholder="000" required maxlength="3" minlength="3">
+            </div>
+            <div class="modal fade" id="modalCvv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">O que é CVV?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img id="img-cvv" src="https://image.flaticon.com/icons/png/512/62/62936.png" height="250px" alt="imagem do produto">
+                    <p>O CVV é um código de três digitos que normalmente fica atrás do seu cartão.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Saquei</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cpf">CPF do titular: </label>
+              <input class="form-control cpf-mask" id='cpf' placeholder="000.000.00-00" type='tel' required maxlength="11" minlength="11">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Continuar compra">
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../../js/eshop/terminar.js"></script>
+    <script src="../../js/eshop/checklogin.js"></script>
+  </body>
+</html>

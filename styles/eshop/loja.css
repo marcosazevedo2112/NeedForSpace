@@ -130,6 +130,9 @@ body {
 #loja .card .link:hover {
   transition: 200ms ease-in-out;
   transform: scale(1.1, 1.1);
+  border: 1px solid orange;
+  background-color: white;
+  color: orange;
 }
 
 #loja div#mais {

@@ -1,28 +1,4 @@
-let numeroEl = document.querySelector("#numero");
-let foguete = document.querySelector("#foguete");
-let i = carrinho.length;
-attFoguete();
-
-window.addEventListener("scroll", (evt) => {
-  let scroll = this.scrollY;
-  if (scroll >= 265) {
-    foguete.classList.remove("sumiu");
-    setTimeout(100);
-  }
-  if (scroll < 265) {
-    foguete.classList.add("sumiu");
-  }
-});
-
-renderProducts();
-
-function attFoguete() {
-  if (i > 0) {
-    foguete.style.backgroundColor = "orange";
-    numeroEl.style.color = "orange";
-  }
-  numeroEl.innerText = i;
-}
+renderProducts();r
 
 function renderProducts() {
   getProductsDB()
@@ -67,12 +43,16 @@ function createNewCard(nome, imagem, preco, usuario, categoria) {
   categoriaEl.innerHTML = categoria;
   valor.innerHTML = `<span>US$ ${preco}</span>`;
   link.setAttribute("class", "link");
-  link.innerText = "Adicionar ao Foguetinho";
-  link.addEventListener("click", () => {
-    console.log("a");
-    i++;
-    addCarrinho(nome, imagem, preco);
-    attFoguete();
+  link.innerText = "Comprar agora";
+  link.addEventListener("click", ()=>{
+    let item = {
+      nome: nome,
+      img: imagem,
+      preco: preco,
+      usuario: usuario
+    }
+    localStorage.setItem('produto', JSON.stringify(item));
+    window.location.href = 'terminar.html'
   });
 
   card.append(img);

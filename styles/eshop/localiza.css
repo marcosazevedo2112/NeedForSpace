@@ -1,0 +1,24 @@
+.container{
+    margin-top: 5vh;
+}
+
+#no-support{
+    color: red;
+}
+
+#mapholder{
+    height: 50vh;
+    width: 80%;
+    margin: auto;
+}
+
+#info{
+    margin-top: 5vh;
+}
+#form-grid{
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 50px;
+}

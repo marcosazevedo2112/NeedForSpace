@@ -1,0 +1,100 @@
+<!DCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../styles/bar.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/scrollbar.css" />
+    <link rel="stylesheet" href="../../styles/eshop/localiza.css">
+    <link
+      rel="shortcut icon"
+      href="../../sources/imgs/icon.ico"
+      type="image/x-icon"
+    />
+    <title>Finalize sua compra</title>
+  </head>
+
+  <body>
+    <div id="conteudo">
+      <div class="bar" id="dark">
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="loja.html">Comprar</a>
+            </li>
+            <li>
+              <a href="vender.html" id="URSS">Vender</a>
+            </li>
+            <li>
+              <a href="../../index.html" id="name">Need For Space</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container" id="container-compras">
+          <h2>Endereço de entrega</h2>
+          <p>Por favor, aceite a requisição de localização no navegador para que nosos sistemas possam trackear onde você está. Nossa entrega é feita via RZ-1-A Wing Interceptor, então não se preocupe se não for o ponto exato onde você mora, nossa tecnologia 
+            reconhece o local desejado mesmo com 100 km de distância.
+          </p>
+          <p id="no-support"></p>
+          <div id="mapholder"></div>
+          <p id="info">Agora, para deixar a entrega ainda mais precisa, preencha o formulario abaixo</p>
+          <form action="">
+                <div id="form-grid">
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input required type="tel" class="form-control" id="cep" maxlength="8" minlength="8"/>
+                    </div>
+                      <div class="form-group">
+                        <label for="numero-casa">Número:</label>
+                        <input required type="number" class="form-control" id="numero-casa"/>
+                      </div>
+                      <div class="form-group">                     
+                        <label for="endereco">Endereço:</label>
+                        <input required type="text" class="form-control" id="endereco"/>
+                      </div>
+                    <div class="form-group">
+                        <label for="referencia">Ponto de referência:</label>
+                        <input required type="text" class="form-control" id="referencia"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="horario">Horário que não tem ninguem em casa:</label>
+                      <input required type="time" class="form-control" id="horario"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="horario">Onde é colocada a renda da familia? (baús, cofres na parede e etc)</label>
+                    <input required type="text" class="form-control" id="horario"/>
+                </div>
+                <div class="form-group">
+                    <label for="chave">Onde você esconde a chave: </label>
+                    <input required type="text" class="form-control" id="chave"/>
+                </div>
+                </div>
+                <div class="form-group">
+                  <input id="btn-confirma" type="submit" class="btn btn-primary" value="Confirmar">
+              </div>
+          </form>
+    </div>
+<script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="../../js/eshop/localiza.js"></script>
+    <script src="../../js/eshop/checklogin.js"></script>
+  </body>
+</html>

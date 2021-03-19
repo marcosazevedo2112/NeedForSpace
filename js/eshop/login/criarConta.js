@@ -1,3 +1,7 @@
+if (localStorage.getItem("usuarioLogado")) {
+  window.location.href = "loja.html";
+}
+
 let criar = document.querySelector("#criar-btn");
 let user = document.querySelector("#Inputname1");
 let email = document.querySelector("#InputEmail1");

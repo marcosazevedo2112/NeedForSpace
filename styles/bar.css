@@ -44,7 +44,6 @@
         top: 0;
 
     }
-
     .menu ul li a{
         display: block;
         font-size: 28px;
@@ -86,4 +85,7 @@
     .menu ul li #name{
         float: none;
     }
+}
+.bar .nomovel{
+    position: fixed;
 }

@@ -282,6 +282,7 @@ body{
 }
 .img-modal{
     height: 50px;
+    border-radius: 10px;
 }
 .sumiu{
     display: none;

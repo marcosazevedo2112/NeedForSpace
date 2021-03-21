@@ -1,0 +1,20 @@
+body{
+    height: 100%;
+    width: 100%;
+    background: white;
+    background: linear-gradient(#017bff 60%, white 50%);
+    background-repeat: no-repeat;
+}
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container .card{
+    border-radius: 22px;
+}
+
+.card-body p{
+    color:green;
+}

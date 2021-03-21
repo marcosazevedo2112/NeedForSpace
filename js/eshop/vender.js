@@ -24,7 +24,7 @@ function click(evt){
     imagem = imagem.trim();
     preco = preco.trim();
 
-    if (nome.length < 3 || imagem < 3 || preco < 0){
+    if (nome.length < 3 || imagem < 3 || preco <= 0){
         help.style.color = "red";
         help.innerHTML =
           'Deu ruim fml, reescreve esses campos ai bixo';
@@ -33,5 +33,17 @@ function click(evt){
         let myModel = new createNewProduct(nome,preco,imagem, usuario ,categoria);
         console.log(myModel);
         addProduct(myModel);
+        help.style.color = "green";
+        help.innerHTML =
+          'Produto Adicionado! pode demorar alguns minutos para que as mudanças sejam salvas. Você será redirecionado em alguns segundos';
+          setTimeout(() => {
+            window.location.href = "loja2.html";
+          }, 1500);
+
+        nomeEl.value = '';
+        imagemEl.value = '';
+        precoEl.value = '';
+        categoriaEl.value = '';
     }
+
 }

@@ -39,5 +39,3 @@ function renderCard(nome, img, preco, usuario) {
   cardBody.append(valor);
   cardBody.append(user);
 }
-
-cartaoEl.addEventListener("input", observaInput);

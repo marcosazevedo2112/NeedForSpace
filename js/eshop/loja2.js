@@ -1,4 +1,4 @@
-renderProducts();r
+renderProducts();
 
 function renderProducts() {
   getProductsDB()

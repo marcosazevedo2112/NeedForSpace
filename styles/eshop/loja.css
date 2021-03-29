@@ -109,6 +109,7 @@ body {
 }
 
 #loja .card .card-img-top {
+  object-fit: contain;
   padding: 50px;
   margin: auto;
   display: inline;

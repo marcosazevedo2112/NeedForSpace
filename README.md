@@ -1,6 +1,6 @@
 # NeedForSpace 
 
-Um site bonitão (infelizmente não responsivo) que simula (de forma meio torta) um marketplace som um tema de astronomia 
+Um site bonitão (infelizmente não responsivo) que simula (de forma meio torta) um marketplace com um tema de astronomia 
 
 ## Tecnologias
  Utilizamos as seguinte tecnologias:
